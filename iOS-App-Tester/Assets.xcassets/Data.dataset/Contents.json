@@ -1,0 +1,18 @@
+{
+  "data" : [
+    {
+      "compression-type" : "none",
+      "idiom" : "iphone",
+      "universal-type-identifier" : "array"
+    },
+    {
+      "compression-type" : "none",
+      "idiom" : "ipad",
+      "universal-type-identifier" : "array"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

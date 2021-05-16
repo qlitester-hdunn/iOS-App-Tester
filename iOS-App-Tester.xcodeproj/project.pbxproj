@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		3023CD3E2650F1B500DD0336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3023CD3C2650F1B500DD0336 /* LaunchScreen.storyboard */; };
 		3023CD492650F1B500DD0336 /* iOS_App_TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD482650F1B500DD0336 /* iOS_App_TesterTests.swift */; };
 		3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */; };
+		3023CD692650F9B000DD0336 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD682650F9AF00DD0336 /* Main.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3023CD4F2650F1B500DD0336 /* iOS-App-TesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-App-TesterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_TesterUITests.swift; sourceTree = "<group>"; };
 		3023CD552650F1B500DD0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3023CD682650F9AF00DD0336 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,9 @@
 		3023CD302650F1B300DD0336 /* iOS-App-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				3023CD6E2651882800DD0336 /* Assets */,
+				3023CD6D2650FC3600DD0336 /* Components */,
+				3023CD672650F98400DD0336 /* Scenes */,
 				3023CD312650F1B300DD0336 /* AppDelegate.swift */,
 				3023CD332650F1B300DD0336 /* SceneDelegate.swift */,
 				3023CD352650F1B300DD0336 /* ContentView.swift */,
@@ -134,6 +139,28 @@
 				3023CD552650F1B500DD0336 /* Info.plist */,
 			);
 			path = "iOS-App-TesterUITests";
+			sourceTree = "<group>";
+		};
+		3023CD672650F98400DD0336 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				3023CD682650F9AF00DD0336 /* Main.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		3023CD6D2650FC3600DD0336 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		3023CD6E2651882800DD0336 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,7 +242,7 @@
 				};
 			};
 			buildConfigurationList = 3023CD292650F1B300DD0336 /* Build configuration list for PBXProject "iOS-App-Tester" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -268,6 +295,7 @@
 			files = (
 				3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */,
 				3023CD342650F1B300DD0336 /* SceneDelegate.swift in Sources */,
+				3023CD692650F9B000DD0336 /* Main.swift in Sources */,
 				3023CD362650F1B300DD0336 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
