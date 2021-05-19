@@ -15,8 +15,11 @@ struct MainButtons: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("Features Testing")
-                
+                HStack{
+                    //Text("    ").frame(maxWidth: MainButtons.deviceScreenHeight * 0.05, alignment: .leading)
+                    Text("Features Testing").frame(maxWidth: MainButtons.deviceScreenHeight * 0.30)
+                    Text("    ").frame(maxWidth: MainButtons.deviceScreenHeight * 0.65, alignment: .trailing)
+                }
                 VStack(alignment: .center, spacing: (MainButtons.deviceScreenHeight * 0.05)/MainButtons.numBtns) {
                     
                     NavigationLink(destination: TypeText()){
@@ -31,7 +34,7 @@ struct MainButtons: View {
                                 .padding(4)
                                 .foregroundColor(Color("BtnText"))
                                 .frame(maxWidth: .infinity, maxHeight: 16)//mfb.newButton(text: .TypeText, action: {print("this")} )
-                        }.navigationTitle("Navigation")
+                        }
                     }
                     mfb.newButton(text: .CustomList, action: {print("that")})
                     mfb.newButton(text: .CustomList, action: {print("that")})
@@ -43,7 +46,12 @@ struct MainButtons: View {
                     mfb.newButton(text: .CustomList, action: {print("that")})
                     mfb.newButton(text: .CustomList, action: {print("that")})
                 }
-            }//.navigationBarTitle(Text("SwiftUI"), displayMode: .inline)
+            }.navigationBarTitle(textView(),displayMode: .automatic)
         }
     }
+    
+    func textView() -> String {
+        return "SwiftUI"
+    }
+    
 }
