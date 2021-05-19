@@ -20,18 +20,13 @@ class MainButtonFactory {
             NavigationLink(destination: TypeText()){
                 ZStack {
                     RoundedRectangle(cornerRadius: 5)
+                        .background(Color(.lightGray))
                         .frame(maxWidth: deviceScreenWidth * 0.80, maxHeight:(deviceScreenHeight * 0.60)/MainButtonFactory.numBtns)
-                        .background(Color("MainBtn"))
+                        
                     newText(text.rawValue)
-                    //mfb.newButton(text: .TypeText, action: {print("this")} )
+                
                 }
             }
-//        let button = Button(action: action){
-//            MainButtonFactory.newText(text.rawValue)
-//        }.padding(5)
-//        .background(Color("MainBtn"))
-//        .frame(maxWidth: deviceScreenWidth * 0.80, maxHeight:(deviceScreenHeight * 0.70)/MainButtonFactory.numBtns)
-//        return button
     }
     
     static func newText(_ text: String) -> some View {
@@ -40,6 +35,7 @@ class MainButtonFactory {
             .font(Font.custom("Helvetica Neue", size: fontSz))
             .padding(4)
             .foregroundColor(Color("BtnText"))
+            .background(Color(.lightGray))
             .frame(maxWidth: .infinity, maxHeight: textMaxHt)
         
         return text
