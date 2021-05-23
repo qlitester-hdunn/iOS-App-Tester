@@ -1,28 +1,29 @@
 //
-//  TypeText.swift
+//  CustomList.swift
 //  iOS-App-Tester
 //
-//  Created by Tester on 5/17/21.
+//  Created by Tester on 5/23/21.
 //
 
+import Foundation
 import SwiftUI
 
-struct TypeText: View {
+struct CustomList: View {
     var body: some View {
         VStack{
-            NavigationLink(destination: TypeText()){
+            NavigationLink(destination: CustomList()){
                 Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).padding()
             }
             
             NavigationLink(destination: self){
-                TypeTextBtn()
+                CustomListBtn()
             }
         }
     }
 }
 
-struct TypeText_Previews: PreviewProvider {
+struct CustomList_Previews: PreviewProvider {
     static var previews: some View {
-        TypeText()
+        CustomList()
     }
 }

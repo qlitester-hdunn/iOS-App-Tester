@@ -20,6 +20,9 @@
 		3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD7B265239FB00DD0336 /* MainButtonName.swift */; };
 		3023CD812652422100DD0336 /* MainButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD802652422100DD0336 /* MainButtonFactory.swift */; };
 		3023CD8C2652562800DD0336 /* TypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD8B2652562800DD0336 /* TypeText.swift */; };
+		305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26D3265A04DA009584B9 /* TypeTextBtn.swift */; };
+		305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26DE265A2B11009584B9 /* CustomListBtn.swift */; };
+		305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26E6265A2B4B009584B9 /* CustomList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		3023CD7B265239FB00DD0336 /* MainButtonName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonName.swift; sourceTree = "<group>"; };
 		3023CD802652422100DD0336 /* MainButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonFactory.swift; sourceTree = "<group>"; };
 		3023CD8B2652562800DD0336 /* TypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeText.swift; sourceTree = "<group>"; };
+		305D26D3265A04DA009584B9 /* TypeTextBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTextBtn.swift; sourceTree = "<group>"; };
+		305D26DE265A2B11009584B9 /* CustomListBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListBtn.swift; sourceTree = "<group>"; };
+		305D26E6265A2B4B009584B9 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -154,6 +160,7 @@
 			children = (
 				3023CD682650F9AF00DD0336 /* Main.swift */,
 				3023CD8B2652562800DD0336 /* TypeText.swift */,
+				305D26E6265A2B4B009584B9 /* CustomList.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -176,6 +183,7 @@
 		3023CD7226518C9B00DD0336 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				305D26D2265A04A4009584B9 /* Screens */,
 				305D26CE265A0419009584B9 /* Main */,
 			);
 			path = Buttons;
@@ -189,6 +197,15 @@
 				3023CD802652422100DD0336 /* MainButtonFactory.swift */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		305D26D2265A04A4009584B9 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				305D26D3265A04DA009584B9 /* TypeTextBtn.swift */,
+				305D26DE265A2B11009584B9 /* CustomListBtn.swift */,
+			);
+			path = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -323,11 +340,14 @@
 			files = (
 				3023CD8C2652562800DD0336 /* TypeText.swift in Sources */,
 				3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */,
+				305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */,
 				3023CD342650F1B300DD0336 /* SceneDelegate.swift in Sources */,
 				3023CD692650F9B000DD0336 /* Main.swift in Sources */,
 				3023CD362650F1B300DD0336 /* ContentView.swift in Sources */,
 				3023CD7426518CBC00DD0336 /* MainButtons.swift in Sources */,
 				3023CD812652422100DD0336 /* MainButtonFactory.swift in Sources */,
+				305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */,
+				305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */,
 				3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

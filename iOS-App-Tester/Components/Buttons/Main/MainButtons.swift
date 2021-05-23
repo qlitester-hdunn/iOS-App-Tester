@@ -9,7 +9,7 @@ import Foundation
 
 import SwiftUI
 struct MainButtons: View {
-    typealias mfb = MainButtonFactory
+    typealias MFB = MainButtonFactory
     static let deviceScreenHeight = UIScreen.main.bounds.height
     static let numBtns = CGFloat(10)
     var body: some View {
@@ -24,20 +24,24 @@ struct MainButtons: View {
                 Group {
                     
                     VStack {
-                        mfb.newButton(text: .TypeText, destination: "", action: {print("this")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        mfb.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        //NavigationLink(destination: TypeText()){
+                            MFB.newButton(text: .TypeText, destination: "", action: {print("this")})
+                       // }
+                        //NavigationLink(destination: CustomList()){
+                            MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        //}
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
                     }
                 }
             }.navigationBarTitle("iOS-App-Tester", displayMode: .automatic)
         }
     }
-
+    
 }
