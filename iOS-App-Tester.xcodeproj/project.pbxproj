@@ -176,11 +176,19 @@
 		3023CD7226518C9B00DD0336 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				305D26CE265A0419009584B9 /* Main */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
+		305D26CE265A0419009584B9 /* Main */ = {
+			isa = PBXGroup;
+			children = (
 				3023CD7326518CBC00DD0336 /* MainButtons.swift */,
 				3023CD7B265239FB00DD0336 /* MainButtonName.swift */,
 				3023CD802652422100DD0336 /* MainButtonFactory.swift */,
 			);
-			path = Buttons;
+			path = Main;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +408,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -461,6 +470,7 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -488,8 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "iOS-App-Tester/Assets iOS-App-Tester/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iOS-App-Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +510,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ql.iOS-App-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -508,8 +521,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "iOS-App-Tester/Assets iOS-App-Tester/Preview\\ Content";
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "iOS-App-Tester/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -518,6 +533,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "ql.iOS-App-Tester";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
