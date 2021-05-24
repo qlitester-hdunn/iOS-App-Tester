@@ -23,6 +23,8 @@
 		305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26D3265A04DA009584B9 /* TypeTextBtn.swift */; };
 		305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26DE265A2B11009584B9 /* CustomListBtn.swift */; };
 		305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26E6265A2B4B009584B9 /* CustomList.swift */; };
+		305D26EC265B3A22009584B9 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26EB265B3A22009584B9 /* Spinner.swift */; };
+		305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26F0265B3A52009584B9 /* ButtonFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +67,8 @@
 		305D26D3265A04DA009584B9 /* TypeTextBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTextBtn.swift; sourceTree = "<group>"; };
 		305D26DE265A2B11009584B9 /* CustomListBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListBtn.swift; sourceTree = "<group>"; };
 		305D26E6265A2B4B009584B9 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
+		305D26EB265B3A22009584B9 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
+		305D26F0265B3A52009584B9 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 				3023CD682650F9AF00DD0336 /* Main.swift */,
 				3023CD8B2652562800DD0336 /* TypeText.swift */,
 				305D26E6265A2B4B009584B9 /* CustomList.swift */,
+				305D26EB265B3A22009584B9 /* Spinner.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -204,6 +209,7 @@
 			children = (
 				305D26D3265A04DA009584B9 /* TypeTextBtn.swift */,
 				305D26DE265A2B11009584B9 /* CustomListBtn.swift */,
+				305D26F0265B3A52009584B9 /* ButtonFactory.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -339,12 +345,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3023CD8C2652562800DD0336 /* TypeText.swift in Sources */,
+				305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */,
 				3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */,
 				305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */,
 				3023CD342650F1B300DD0336 /* SceneDelegate.swift in Sources */,
 				3023CD692650F9B000DD0336 /* Main.swift in Sources */,
 				3023CD362650F1B300DD0336 /* ContentView.swift in Sources */,
 				3023CD7426518CBC00DD0336 /* MainButtons.swift in Sources */,
+				305D26EC265B3A22009584B9 /* Spinner.swift in Sources */,
 				3023CD812652422100DD0336 /* MainButtonFactory.swift in Sources */,
 				305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */,
 				305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */,

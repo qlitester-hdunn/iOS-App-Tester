@@ -15,46 +15,37 @@ class MainButtonFactory {
     static let fontSz = CGFloat((((deviceScreenHeight * 0.30)/MainButtonFactory.numBtns) > 21.0) ? 21.0 : 16.0)
     static let textMaxHt = CGFloat(((deviceScreenHeight * 0.35)/MainButtonFactory.numBtns) > fontSz ? fontSz * 1.2 : fontSz * 1.03)
     static let btnWidth = deviceScreenWidth * 0.80
-    static func newButton(text: MainButtonName, destination: String, action: @escaping () -> Void) -> some View {
-        let edges = EdgeInsets.init(
-            top: textMaxHt * CGFloat(0.7),
-            leading: CGFloat(btnWidth/10),
-            bottom: textMaxHt * CGFloat(0.7),
-            trailing: CGFloat(btnWidth/10)
-        )
-        return
-            (
-//                ZStack {
-//                Button(action: {
-//                    print(text.rawValue)
-//                }) {
-                NavigationLink(destination: TypeText()){
-                    RoundedRectangle(cornerRadius:25)
-                        .frame(maxWidth: btnWidth, maxHeight: textMaxHt * 3)
-                        .padding(edges)
-                        .background(Color("MainBtn"))
-                        .overlay(Text(text.rawValue)
-                        .fontWeight(.bold)
-                        .font(.title)
-                        .background(Color("MainBtn"))
-                        .foregroundColor(Color.red)
-                        .frame(maxWidth: btnWidth, maxHeight: textMaxHt))
-                }
-                .frame(maxWidth: btnWidth, maxHeight: textMaxHt * 3)
-                .background(Color("MainBtn"))
-                .cornerRadius(20)
-                
-            )
+    //static func newButton(text: MainButtonName, destination: Destination, action: @escaping () -> Void) -> some View {
+    static func getButton(text: MainButtonName, destiny: Destination, action: @escaping () -> Void) -> some View {
+        return ButtonView(text: text, destiny: destiny, action:{})
     }
-    
-    static func newText(_ text: String) -> some View {
-        let text = Text(text)
-            .bold()
-            .font(Font.custom("Helvetica Neue", size: fontSz))
-            .padding(4)
-            .foregroundColor(Color("BtnText"))
-            .frame(maxWidth:.infinity, maxHeight: textMaxHt)
         
-        return text
-    }
+    static let edges = EdgeInsets.init(
+        top: textMaxHt * CGFloat(0.7),
+        leading: CGFloat(btnWidth/10),
+        bottom: textMaxHt * CGFloat(0.7),
+        trailing: CGFloat(btnWidth/10)
+    )
+        
+    
+//        return
+//            (
+//                NavigationLink(destination: getDestination(text: text, destiny: destination, action: action )){
+//                    RoundedRectangle(cornerRadius:25)
+//                        .frame(maxWidth: btnWidth, maxHeight: textMaxHt * 3)
+//                        .padding(edges)
+//                        .background(Color("MainBtn"))
+//                        .overlay(Text(text.rawValue)
+//                        .fontWeight(.bold)
+//                        .font(.title)
+//                        .background(Color("MainBtn"))
+//                        .foregroundColor(Color.red)
+//                        .frame(maxWidth: btnWidth, maxHeight: textMaxHt))
+//                }
+//                .frame(maxWidth: btnWidth, maxHeight: textMaxHt * 3)
+//                .background(Color("MainBtn"))
+//                .cornerRadius(20)
+//            )
+//    }
+
 }

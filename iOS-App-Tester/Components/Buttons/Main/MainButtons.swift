@@ -24,20 +24,17 @@ struct MainButtons: View {
                 Group {
                     
                     VStack {
-                        //NavigationLink(destination: TypeText()){
-                            MFB.newButton(text: .TypeText, destination: "", action: {print("this")})
-                       // }
-                        //NavigationLink(destination: CustomList()){
-                            MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        //}
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                       
+//                        MFB.newButton(text: .TypeText, destination: "", action: {print("this")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                          MFB.getButton(text: .Spinner, destiny: .spinner, action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
                     }
                 }
             }.navigationBarTitle("iOS-App-Tester", displayMode: .automatic)
