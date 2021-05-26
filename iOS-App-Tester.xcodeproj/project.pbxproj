@@ -188,6 +188,7 @@
 		3023CD7226518C9B00DD0336 /* Buttons */ = {
 			isa = PBXGroup;
 			children = (
+				305D26F0265B3A52009584B9 /* ButtonFactory.swift */,
 				305D26D2265A04A4009584B9 /* Screens */,
 				305D26CE265A0419009584B9 /* Main */,
 			);
@@ -209,7 +210,6 @@
 			children = (
 				305D26D3265A04DA009584B9 /* TypeTextBtn.swift */,
 				305D26DE265A2B11009584B9 /* CustomListBtn.swift */,
-				305D26F0265B3A52009584B9 /* ButtonFactory.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
