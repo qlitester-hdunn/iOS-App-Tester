@@ -8,20 +8,29 @@
 import Foundation
 import SwiftUI
 
-struct MainFormat {
+class MainFormat {
     static let deviceScreenWidth = UIScreen.main.bounds.width
     static let deviceScreenHeight = UIScreen.main.bounds.height
     static let numBtns = CGFloat(10)
     static let fontSz = CGFloat((((deviceScreenHeight * 0.30)/MainButtonFactory.numBtns) > 21.0) ? 21.0 : 16.0)
     static let textMaxHt = CGFloat(((deviceScreenHeight * 0.35)/MainButtonFactory.numBtns) > fontSz ? fontSz * 1.2 : fontSz * 1.03)
     static let btnWidth = deviceScreenWidth * 0.80
-    
-    static let edges = EdgeInsets.init(
-        top: textMaxHt * CGFloat(0.9),
-        leading: CGFloat(btnWidth/6),
-        bottom: textMaxHt * CGFloat(0.9),
-        trailing: CGFloat(btnWidth/6)
+    static let stop: CGFloat = textMaxHt * CGFloat(0.9)
+    static let sleading: CGFloat = CGFloat(btnWidth/6)
+    static let sbottom: CGFloat = textMaxHt * CGFloat(0.9)
+    static let strailing: CGFloat = CGFloat(btnWidth/6)
+    static let textPaddingLR: CGFloat = CGFloat(btnWidth/6)
+    var top: CGFloat = textMaxHt * CGFloat(0.9)
+    var leading: CGFloat = CGFloat(btnWidth/6)
+    var bottom: CGFloat = textMaxHt * CGFloat(0.9)
+    var trailing: CGFloat = CGFloat(btnWidth/6)
+    var edges: EdgeInsets = EdgeInsets.init(
+        top: stop, leading: sleading, bottom: sbottom, trailing: strailing
     )
+    
+    init(top: CGFloat = stop, leading: CGFloat = sleading, bottom: CGFloat = sbottom, trailing: CGFloat = strailing){
+        self.edges = EdgeInsets.init(top: top, leading: leading, bottom: bottom, trailing: trailing)
+    }
 }
 
 struct ButtonView: View {
@@ -29,21 +38,40 @@ struct ButtonView: View {
     var text: MainButtonName
     var destiny: Destination
     var action: () -> Void
-    func getDestiny(destination: Destination )-> some View {
+    
+    @ViewBuilder
+    func getDestiny(destination: Destination) -> some View {
+
         switch destination {
         case .spinner:
-            return Spinner()
+            Spinner()
+        case .customList:
+            CustomList()
+        case .typeText:
+            TypeText()
         }
     }
+    
     var body: some View {
         let destination = getDestiny(destination: destiny)
-        print("text \(text.rawValue)")
+        print("text \(text.rawValue) length \(text.rawValue.count)")
+        let denom = (6 * (CGFloat(text.rawValue.count)/19))
+        let textPaddingLR = (text.rawValue.count < 16) ?
+            max(MainFormat.btnWidth/6, MainFormat.btnWidth/denom) : MainFormat.textPaddingLR
+        
         return
             (
                 NavigationLink(destination: destination){
                     RoundedRectangle(cornerRadius:25)
                         .frame(maxWidth: MainFormat.btnWidth, maxHeight: MainFormat.textMaxHt * 3)
-                        .padding(MainFormat.edges)
+                        .padding(
+                            MainFormat(
+                                top: MainFormat.stop,
+                                leading: textPaddingLR,
+                                bottom: MainFormat.sbottom,
+                                trailing: textPaddingLR
+                            ).edges
+                        )
                         .background(Color("MainBtn"))
                         .overlay(Text(text.rawValue)
                                     .fontWeight(.bold)
@@ -53,7 +81,7 @@ struct ButtonView: View {
                                     .frame(maxWidth: MainFormat.btnWidth, maxHeight: MainFormat.textMaxHt))
                 }
                 .frame(maxWidth: MainFormat.btnWidth, maxHeight: MainFormat.textMaxHt * 3)
-                .background(Color("MainBtn"))
+                .background(Color("BtnText"))
                 .cornerRadius(20)
             )
     }
@@ -61,21 +89,22 @@ struct ButtonView: View {
 }
 enum Destination {
     case spinner
+    case customList
+    case typeText
 }
 enum ButtonFactory: View  {
     case typeText
     case customList
     case spinner
     
-    @ViewBuilder
     var body: some View {
         switch self {
         case .typeText:
-            ButtonView(text: .TypeText, destiny: .spinner, action: {})
+            return ButtonView(text: .TypeText, destiny: .typeText, action: {})
         case .customList:
-            ButtonView(text: .CustomList, destiny: .spinner, action: {})
+            return ButtonView(text: .CustomList, destiny: .customList, action: {})
         case .spinner:
-            ButtonView(text: .Spinner, destiny: .spinner, action: {})
+           return  ButtonView(text: .Spinner, destiny: .spinner, action: {})
         }
     }
 }

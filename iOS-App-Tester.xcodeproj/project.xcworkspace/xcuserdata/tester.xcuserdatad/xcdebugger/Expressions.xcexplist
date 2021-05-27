@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in ButtonView.body.getter:ButtonFactory.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "(6 * (text.rawValue.count/19))">
+            </PersistentString>
+            <PersistentString
+               value = "MainFormat.btnWidth">
+            </PersistentString>
+            <PersistentString
+               value = "MainFormat.btnWidth/denom">
+            </PersistentString>
+            <PersistentString
+               value = "(text.rawValue.count)">
+            </PersistentString>
+            <PersistentString
+               value = "(text.rawValue)">
+            </PersistentString>
+            <PersistentString
+               value = "MainFormat.btnWidth/6">
+            </PersistentString>
+            <PersistentString
+               value = "MainFormat.btnWidth/(6 * CGFloat(text.rawValue.count/19))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

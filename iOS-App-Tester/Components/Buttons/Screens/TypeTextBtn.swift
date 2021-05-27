@@ -32,7 +32,7 @@ struct TypeTextBtn: View {
                 Button(action: {
                     print("Delete button tapped!")
                 }) {
-                    Text("TYPE TEXT")
+                    Text(text.rawValue)
                         .fontWeight(.bold)
                         .font(.title)
                         .padding(edges)
