@@ -10,47 +10,45 @@ import SwiftUI
 struct TypeText: View {
     @Environment(\.presentationMode) var presentation
     @State var text = /*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/
-    
+    init() {
+        UITextView.appearance().backgroundColor = .clear
+    }
     var body: some View {
         
         VStack(alignment: .center){
             Text("Type Text")
-            Spacer()
+                .padding(.bottom, 10)
+            
             TextEditor(text: $text)
                 .padding(4)
+                .frame(maxWidth: 200, maxHeight:100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+                .background(Color(UIColor(red: 0.95, green: 0.95, blue: 1.0, alpha: 1.0)))
+                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
                 .navigationBarBackButtonHidden(true)
                 .toolbar {
                     ToolbarItemGroup(placement: .navigation) {
-//                        Button(action: {
-//                                self.presentation.wrappedValue.dismiss()
-//                                }) {
-//                                    HStack {
-//                                    Image("back") // BackButton Image
-//                                        .aspectRatio(contentMode: .fit)
-//                                        .foregroundColor(.white)
-//                                    Text("Go Back") //translated Back button title
-//                                    }
-//                                }
-//
-//                    }
                         
                         HStack{
-                        Image(systemName: "arrow.left")
-                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
-                            .foregroundColor(.white)
-                            .onTapGesture {
-                                // code to dismiss the view
-                                self.presentation.wrappedValue.dismiss()
-                            }
-
-                            Text("iOS-App-Tester").foregroundColor(.white).font(.title).fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            Image(systemName: "arrow.left")
+                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
+                                .foregroundColor(.white)
+                                .onTapGesture {
+                                    // code to dismiss the view
+                                    self.presentation.wrappedValue.dismiss()
+                                }
+                            
+                            Text("iOS-App-Tester").foregroundColor(.white).font(.title).fontWeight(.medium)
                         }
-
+                        
                     }
+                    
                 }
         }
+        
+        
     }
 }
+
 
 struct TypeText_Previews: PreviewProvider {
     static var previews: some View {
