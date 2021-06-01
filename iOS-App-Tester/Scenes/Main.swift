@@ -8,9 +8,7 @@
 import SwiftUI
 
 struct Main: View {
-    let asset = NSDataAsset(name: "Persons", bundle: Bundle.main)
-    //    let json = try? NSJSONSerialization.JSONObjectWithData(asset!.data, options: NSJSONReadingOptions.AllowFragments)
-    //    print(json)
+    
     init() {
         let coloredAppearance = UINavigationBarAppearance()
 
@@ -25,18 +23,6 @@ struct Main: View {
         UINavigationBar.appearance().standardAppearance = coloredAppearance
         UINavigationBar.appearance().compactAppearance = coloredAppearance
         UINavigationBar.appearance().scrollEdgeAppearance = coloredAppearance
-            //        let appearance = UINavigationBarAppearance()
-            //        appearance.configureWithOpaqueBackground()
-            //        appearance.backgroundColor = .blue
-            //        let attrs: [NSAttributedString.Key: Any] = [
-            //            .foregroundColor: UIColor.white,
-            //            .font: UIFont.monospacedSystemFont(ofSize: 36, weight: .black)
-            //        ]
-            //
-            //        appearance.largeTitleTextAttributes = attrs
-            //        UINavigationBar.appearance().standardAppearance = appearance
-            //        UINavigationBar.appearance().compactAppearance = appearance
-            //        UINavigationBar.appearance().scrollEdgeAppearance = appearance
     }
     
     var body: some View {

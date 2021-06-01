@@ -3,28 +3,76 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "verifyTextEditor #1 () in TypeText.testExample():TypeText.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "textView.value">
+            </PersistentString>
+            <PersistentString
+               value = "textView.label">
+            </PersistentString>
+            <PersistentString
+               value = "textView.exists">
+            </PersistentString>
+            <PersistentString
+               value = "textEditor.exists">
+            </PersistentString>
+            <PersistentString
+               value = "textEditor.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TypeText.testExample():TypeText.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CarList.init():CarsList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)">
+            </PersistentString>
+            <PersistentString
+               value = "JSONSerialization.data(withJSONObject: data, options: [])">
+            </PersistentString>
+            <PersistentString
+               value = "JSONSerialization&#10;            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments) as! CarModel">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "closure #1 in ButtonView.body.getter:ButtonFactory.swift">
          <PersistentStrings>
             <PersistentString
                value = "(6 * (text.rawValue.count/19))">
             </PersistentString>
             <PersistentString
-               value = "MainFormat.btnWidth">
+               value = "MainFormat.btnWidth/6">
             </PersistentString>
             <PersistentString
                value = "MainFormat.btnWidth/denom">
             </PersistentString>
             <PersistentString
-               value = "(text.rawValue.count)">
-            </PersistentString>
-            <PersistentString
                value = "(text.rawValue)">
             </PersistentString>
             <PersistentString
-               value = "MainFormat.btnWidth/6">
+               value = "MainFormat.btnWidth">
+            </PersistentString>
+            <PersistentString
+               value = "(text.rawValue.count)">
             </PersistentString>
             <PersistentString
                value = "MainFormat.btnWidth/(6 * CGFloat(text.rawValue.count/19))">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "verifyEditorLable #1 () in TypeText.testExample():TypeText.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "labelTypeText.value as? String">
+            </PersistentString>
+            <PersistentString
+               value = "labelTypeText.value">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

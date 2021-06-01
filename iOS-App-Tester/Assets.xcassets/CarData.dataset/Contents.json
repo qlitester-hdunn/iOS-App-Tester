@@ -1,9 +1,9 @@
 {
   "data" : [
     {
-      "filename" : "Persons.swift",
+      "filename" : "CarData.json",
       "idiom" : "universal",
-      "universal-type-identifier" : "public.swift-source"
+      "universal-type-identifier" : "public.json"
     }
   ],
   "info" : {

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		300C0C802664C9DA0006E810 /* TypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C7F2664C9DA0006E810 /* TypeText.swift */; };
+		300C0C912665DF420006E810 /* CarData.json in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C902665DF420006E810 /* CarData.json */; };
+		300C0C992665DFF60006E810 /* CarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C982665DFF60006E810 /* CarsList.swift */; };
+		300C0C9F2665E38A0006E810 /* CarModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C9E2665E38A0006E810 /* CarModel.swift */; };
 		3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD312650F1B300DD0336 /* AppDelegate.swift */; };
 		3023CD342650F1B300DD0336 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD332650F1B300DD0336 /* SceneDelegate.swift */; };
 		3023CD362650F1B300DD0336 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD352650F1B300DD0336 /* ContentView.swift */; };
@@ -45,6 +49,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		300C0C7F2664C9DA0006E810 /* TypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeText.swift; sourceTree = "<group>"; };
+		300C0C902665DF420006E810 /* CarData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CarData.json; sourceTree = "<group>"; };
+		300C0C982665DFF60006E810 /* CarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsList.swift; sourceTree = "<group>"; };
+		300C0C9E2665E38A0006E810 /* CarModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarModel.swift; sourceTree = "<group>"; };
 		3023CD2E2650F1B300DD0336 /* iOS-App-Tester.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOS-App-Tester.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3023CD312650F1B300DD0336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3023CD332650F1B300DD0336 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,6 +104,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		300C0C7E2664C9A40006E810 /* TestCases */ = {
+			isa = PBXGroup;
+			children = (
+				300C0C7F2664C9DA0006E810 /* TypeText.swift */,
+			);
+			path = TestCases;
+			sourceTree = "<group>";
+		};
+		300C0C9D2665E3620006E810 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				300C0C9E2665E38A0006E810 /* CarModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		3023CD252650F1B300DD0336 = {
 			isa = PBXGroup;
 			children = (
@@ -119,6 +143,7 @@
 		3023CD302650F1B300DD0336 /* iOS-App-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				300C0C9D2665E3620006E810 /* Models */,
 				3023CD6E2651882800DD0336 /* Assets */,
 				3023CD6D2650FC3600DD0336 /* Components */,
 				3023CD672650F98400DD0336 /* Scenes */,
@@ -153,6 +178,7 @@
 		3023CD522650F1B500DD0336 /* iOS-App-TesterUITests */ = {
 			isa = PBXGroup;
 			children = (
+				300C0C7E2664C9A40006E810 /* TestCases */,
 				3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */,
 				3023CD552650F1B500DD0336 /* Info.plist */,
 			);
@@ -166,6 +192,7 @@
 				3023CD8B2652562800DD0336 /* TypeText.swift */,
 				305D26E6265A2B4B009584B9 /* CustomList.swift */,
 				305D26EB265B3A22009584B9 /* Spinner.swift */,
+				300C0C982665DFF60006E810 /* CarsList.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -181,6 +208,7 @@
 		3023CD6E2651882800DD0336 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				300C0C902665DF420006E810 /* CarData.json */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -344,6 +372,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300C0C9F2665E38A0006E810 /* CarModel.swift in Sources */,
 				3023CD8C2652562800DD0336 /* TypeText.swift in Sources */,
 				305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */,
 				3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */,
@@ -356,6 +385,8 @@
 				3023CD812652422100DD0336 /* MainButtonFactory.swift in Sources */,
 				305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */,
 				305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */,
+				300C0C912665DF420006E810 /* CarData.json in Sources */,
+				300C0C992665DFF60006E810 /* CarsList.swift in Sources */,
 				3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -372,6 +403,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				300C0C802664C9DA0006E810 /* TypeText.swift in Sources */,
 				3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

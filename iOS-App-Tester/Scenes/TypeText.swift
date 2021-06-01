@@ -44,9 +44,8 @@ struct TypeText: View {
                     
                 }
         }
-        
-        
     }
+    
 }
 
 

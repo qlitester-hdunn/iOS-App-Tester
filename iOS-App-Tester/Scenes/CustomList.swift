@@ -18,6 +18,7 @@ struct CustomList: View {
             NavigationLink(destination: self){
                 CustomListBtn()
             }
+            CarList()
         }
     }
 }
