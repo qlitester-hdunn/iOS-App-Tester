@@ -12,14 +12,14 @@ struct CarList: View {
     let asset = NSDataAsset(name: "CarData", bundle: Bundle.main)
     let decoder = JSONDecoder()
     var data: NSDictionary
-    var cars: CarModel? = nil
+    var cars: Cars? = nil
     
     init () {
         data = try! JSONSerialization
             .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-        
+        print("data \(data)")
         let jsonData = try! JSONSerialization.data(withJSONObject: data, options: [])
-        guard let cars = try? decoder.decode(CarModel.self, from: jsonData) else {
+        guard let cars = try? decoder.decode(Cars.self, from: jsonData) else {
             print("DataError")
             return
         }
