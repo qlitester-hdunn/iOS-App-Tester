@@ -29,16 +29,7 @@
          contextName = "CarList.init():CarsList.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSONSerialization&#10;            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSArray">
-            </PersistentString>
-            <PersistentString
-               value = "JSONSerialization&#10;            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments) as! CarModel">
-            </PersistentString>
-            <PersistentString
-               value = "JSONSerialization.data(withJSONObject: data, options: [])">
-            </PersistentString>
-            <PersistentString
-               value = "JSONSerialization.jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)">
+               value = "JSONSerialization&#10;            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
@@ -46,7 +37,7 @@
          contextName = "closure #1 in ButtonView.body.getter:ButtonFactory.swift">
          <PersistentStrings>
             <PersistentString
-               value = "MainFormat.btnWidth/(6 * CGFloat(text.rawValue.count/19))">
+               value = "(text.rawValue.count)">
             </PersistentString>
             <PersistentString
                value = "MainFormat.btnWidth/6">
@@ -58,13 +49,13 @@
                value = "(text.rawValue)">
             </PersistentString>
             <PersistentString
+               value = "MainFormat.btnWidth/(6 * CGFloat(text.rawValue.count/19))">
+            </PersistentString>
+            <PersistentString
                value = "(6 * (text.rawValue.count/19))">
             </PersistentString>
             <PersistentString
                value = "MainFormat.btnWidth">
-            </PersistentString>
-            <PersistentString
-               value = "(text.rawValue.count)">
             </PersistentString>
          </PersistentStrings>
       </ContextState>
