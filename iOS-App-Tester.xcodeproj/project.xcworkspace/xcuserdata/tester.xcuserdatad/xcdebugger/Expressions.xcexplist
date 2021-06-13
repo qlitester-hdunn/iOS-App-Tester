@@ -3,6 +3,17 @@
    version = "1.0">
    <ContextStates>
       <ContextState
+         contextName = "CarList.init():CarsList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "Array(cars_.allProperties())">
+            </PersistentString>
+            <PersistentString
+               value = "decoder.decode(Cars.self, from: jsonData)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
          contextName = "verifyTextEditor #1 () in TypeText.testExample():TypeText.swift">
          <PersistentStrings>
             <PersistentString
@@ -23,15 +34,15 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
-         contextName = "TypeText.testExample():TypeText.swift">
-      </ContextState>
-      <ContextState
-         contextName = "CarList.init():CarsList.swift">
+         contextName = "property wrapper backing initializer of CarList.cars:CarsList.swift">
          <PersistentStrings>
             <PersistentString
-               value = "JSONSerialization&#10;            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments)">
+               value = "CarListAdapter().cars">
             </PersistentString>
          </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "__pthread_kill:(null)">
       </ContextState>
       <ContextState
          contextName = "closure #1 in ButtonView.body.getter:ButtonFactory.swift">
@@ -60,6 +71,9 @@
          </PersistentStrings>
       </ContextState>
       <ContextState
+         contextName = "CarListAdapter.init():CarDataListAdapter.swift">
+      </ContextState>
+      <ContextState
          contextName = "verifyEditorLable #1 () in TypeText.testExample():TypeText.swift">
          <PersistentStrings>
             <PersistentString
@@ -67,6 +81,25 @@
             </PersistentString>
             <PersistentString
                value = "labelTypeText.value">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #1 in CarList.body.getter:CarsList.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "cars_">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TypeText.testExample():TypeText.swift">
+      </ContextState>
+      <ContextState
+         contextName = "CarModel.init(from:):CarModel.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = ".id">
             </PersistentString>
          </PersistentStrings>
       </ContextState>

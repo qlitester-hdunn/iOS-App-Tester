@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		30092B962675439E00732187 /* CarDataListAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30092B952675439E00732187 /* CarDataListAdapter.swift */; };
+		30092BA526757A4700732187 /* OptionalWrappers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30092BA426757A4600732187 /* OptionalWrappers.swift */; };
 		300C0C802664C9DA0006E810 /* TypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C7F2664C9DA0006E810 /* TypeText.swift */; };
 		300C0C912665DF420006E810 /* CarData.json in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C902665DF420006E810 /* CarData.json */; };
 		300C0C992665DFF60006E810 /* CarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 300C0C982665DFF60006E810 /* CarsList.swift */; };
@@ -49,6 +51,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		30092B952675439E00732187 /* CarDataListAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDataListAdapter.swift; sourceTree = "<group>"; };
+		30092BA426757A4600732187 /* OptionalWrappers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionalWrappers.swift; sourceTree = "<group>"; };
 		300C0C7F2664C9DA0006E810 /* TypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeText.swift; sourceTree = "<group>"; };
 		300C0C902665DF420006E810 /* CarData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = CarData.json; sourceTree = "<group>"; };
 		300C0C982665DFF60006E810 /* CarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsList.swift; sourceTree = "<group>"; };
@@ -104,6 +108,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		30092B942675438000732187 /* Adapters */ = {
+			isa = PBXGroup;
+			children = (
+				30092B952675439E00732187 /* CarDataListAdapter.swift */,
+			);
+			path = Adapters;
+			sourceTree = "<group>";
+		};
+		30092BA326757A2900732187 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				30092BA426757A4600732187 /* OptionalWrappers.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
 		300C0C7E2664C9A40006E810 /* TestCases */ = {
 			isa = PBXGroup;
 			children = (
@@ -143,6 +163,8 @@
 		3023CD302650F1B300DD0336 /* iOS-App-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				30092BA326757A2900732187 /* Extentions */,
+				30092B942675438000732187 /* Adapters */,
 				300C0C9D2665E3620006E810 /* Models */,
 				3023CD6E2651882800DD0336 /* Assets */,
 				3023CD6D2650FC3600DD0336 /* Components */,
@@ -376,6 +398,7 @@
 				3023CD8C2652562800DD0336 /* TypeText.swift in Sources */,
 				305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */,
 				3023CD322650F1B300DD0336 /* AppDelegate.swift in Sources */,
+				30092B962675439E00732187 /* CarDataListAdapter.swift in Sources */,
 				305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */,
 				3023CD342650F1B300DD0336 /* SceneDelegate.swift in Sources */,
 				3023CD692650F9B000DD0336 /* Main.swift in Sources */,
@@ -388,6 +411,7 @@
 				300C0C912665DF420006E810 /* CarData.json in Sources */,
 				300C0C992665DFF60006E810 /* CarsList.swift in Sources */,
 				3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */,
+				30092BA526757A4700732187 /* OptionalWrappers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

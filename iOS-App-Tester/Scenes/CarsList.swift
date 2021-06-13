@@ -8,26 +8,43 @@
 import Foundation
 import SwiftUI
 
+struct CarListRow: View {
+    var row: CarModel
+    var body: some View {
+        Text("Drive this \(row.Name!)")
+    }
+}
+
 struct CarList: View {
-    let asset = NSDataAsset(name: "CarData", bundle: Bundle.main)
-    let decoder = JSONDecoder()
-    var data: NSDictionary
-    var cars: Cars? = nil
+    let cars = CarListAdapter().cars
     
-    init () {
-        data = try! JSONSerialization
-            .jsonObject(with: asset!.data, options: JSONSerialization.ReadingOptions.allowFragments) as! NSDictionary
-        print("data \(data)")
-        let jsonData = try! JSONSerialization.data(withJSONObject: data, options: [])
-        guard let cars = try? decoder.decode(Cars.self, from: jsonData) else {
-            print("DataError")
-            return
-        }
-        print(cars)
+    func pnt() -> [String]{
+        let props: [String]? = cars!.allProperties()
+        print("keys \(props!)")
+        return props!
     }
     
     var body: some View {
-        Text("Cars List Comming")
+        VStack {
+            Text("not implemented")
+                List {
+                    ForEach( Array(self.cars!.allProperties()), id: \.self) { (key) in
+                        HStack {
+                            Text(key)
+                            Spacer()
+                            ForEach(self.cars!.cars, id: \.self){ car in
+                                Text(String(describing: "\(car)"))
+//                            Text(self.dict[key]?.description ?? "false").onTapGesture {
+//                                let v = self.dict[key] ?? false
+//                                self.dict[key] = !v
+//                            }.foregroundColor(self.dict[key] ?? false ? Color.red: Color.green)
+                        
+                            }
+                        }
+                    }
+        
+                }
+        }
     }
 }
 
