@@ -31,6 +31,7 @@
 		305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26E6265A2B4B009584B9 /* CustomList.swift */; };
 		305D26EC265B3A22009584B9 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26EB265B3A22009584B9 /* Spinner.swift */; };
 		305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26F0265B3A52009584B9 /* ButtonFactory.swift */; };
+		30783C392697AA2400B43F76 /* DataBase.json in Resources */ = {isa = PBXBuildFile; fileRef = 30783C382697AA2400B43F76 /* DataBase.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		305D26E6265A2B4B009584B9 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		305D26EB265B3A22009584B9 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		305D26F0265B3A52009584B9 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		30783C382697AA2400B43F76 /* DataBase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataBase.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		3023CD302650F1B300DD0336 /* iOS-App-Tester */ = {
 			isa = PBXGroup;
 			children = (
+				30783C372697A98A00B43F76 /* Resources */,
 				30092BA326757A2900732187 /* Extentions */,
 				30092B942675438000732187 /* Adapters */,
 				300C0C9D2665E3620006E810 /* Models */,
@@ -262,6 +265,14 @@
 				305D26DE265A2B11009584B9 /* CustomListBtn.swift */,
 			);
 			path = Screens;
+			sourceTree = "<group>";
+		};
+		30783C372697A98A00B43F76 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				30783C382697AA2400B43F76 /* DataBase.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +380,7 @@
 			files = (
 				3023CD3E2650F1B500DD0336 /* LaunchScreen.storyboard in Resources */,
 				3023CD3B2650F1B500DD0336 /* Preview Assets.xcassets in Resources */,
+				30783C392697AA2400B43F76 /* DataBase.json in Resources */,
 				3023CD382650F1B500DD0336 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
