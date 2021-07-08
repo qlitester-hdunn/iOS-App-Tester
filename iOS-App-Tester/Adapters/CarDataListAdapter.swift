@@ -35,7 +35,6 @@ struct CarListAdapter {
         //        let json = try! JSONSerialization.data(withJSONObject: jsonData, options: JSONSerialization.WritingOptions.fragmentsAllowed)
         do {
             cars = try decoder.decode(Cars.self, from: jsonData)
-            print(cars)
         }
         catch{
             print("DataError")

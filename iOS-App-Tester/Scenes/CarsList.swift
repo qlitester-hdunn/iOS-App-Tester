@@ -10,8 +10,15 @@ import SwiftUI
 
 struct CarListRow: View {
     var row: CarModel
+    init(model: CarModel){
+        self.row = model
+    }
     var body: some View {
-        Text("Drive this \(row.Name!)")
+        HStack {
+            Text("Drive a \(row.Name!.capitalized) ")
+            Spacer()
+            Text("with \(String(describing:row.Horsepower!)) HP!")
+        }
     }
 }
 
@@ -26,24 +33,12 @@ struct CarList: View {
     
     var body: some View {
         VStack {
-            Text("not implemented")
-                List {
-                    ForEach( Array(self.cars!.allProperties()), id: \.self) { (key) in
-                        HStack {
-                            Text(key)
-                            Spacer()
-                            ForEach(self.cars!.cars, id: \.self){ car in
-                                Text(String(describing: "\(car)"))
-//                            Text(self.dict[key]?.description ?? "false").onTapGesture {
-//                                let v = self.dict[key] ?? false
-//                                self.dict[key] = !v
-//                            }.foregroundColor(self.dict[key] ?? false ? Color.red: Color.green)
-                        
-                            }
-                        }
-                    }
-        
+            Text("implemented")
+            List {
+                ForEach(self.cars!.cars, id: \.self){ car in
+                    CarListRow(model: car)
                 }
+            }
         }
     }
 }
