@@ -1,0 +1,15 @@
+iOS-App-Tester.xcodeproj/project.xcworkspace/xcuserdata/tester.xcuserdatad/UserInterfaceState.xcuserstate
+## User settings
+xcuserdata/
+
+## compatibility with Xcode 3 and earlier (ignoring not required starting Xcode 4)
+build/
+DerivedData/
+
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+.build/
+.DS_Store
