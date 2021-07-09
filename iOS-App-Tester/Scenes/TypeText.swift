@@ -9,7 +9,8 @@ import SwiftUI
 
 struct TypeText: View {
     @Environment(\.presentationMode) var presentation
-    @State var text = /*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/
+    @EnvironmentObject var store: Store
+    
     init() {
         UITextView.appearance().backgroundColor = .clear
     }
@@ -19,30 +20,33 @@ struct TypeText: View {
             Text("Type Text")
                 .padding(.bottom, 10)
             
-            TextEditor(text: $text)
-                .padding(4)
-                .frame(maxWidth: 200, maxHeight:100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
-                .background(Color(UIColor(red: 0.95, green: 0.95, blue: 1.0, alpha: 1.0)))
-                .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
-                .navigationBarBackButtonHidden(true)
-                .toolbar {
-                    ToolbarItemGroup(placement: .navigation) {
+            TextEditor(text: Binding<String>(
+                        get: { store.state.editText },
+                        set: { store.dispatch(action: .setTextEdit($0))})
+            )
+            .padding(4)
+            .frame(maxWidth: 200, maxHeight:100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
+            .background(Color(UIColor(red: 0.95, green: 0.95, blue: 1.0, alpha: 1.0)))
+            .multilineTextAlignment(/*@START_MENU_TOKEN@*/.leading/*@END_MENU_TOKEN@*/)
+            .navigationBarBackButtonHidden(true)
+            .toolbar {
+                ToolbarItemGroup(placement: .navigation) {
+                    
+                    HStack{
+                        Image(systemName: "arrow.left")
+                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
+                            .foregroundColor(.white)
+                            .onTapGesture {
+                                // code to dismiss the view
+                                self.presentation.wrappedValue.dismiss()
+                            }
                         
-                        HStack{
-                            Image(systemName: "arrow.left")
-                                .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, alignment: .leading)
-                                .foregroundColor(.white)
-                                .onTapGesture {
-                                    // code to dismiss the view
-                                    self.presentation.wrappedValue.dismiss()
-                                }
-                            
-                            Text("iOS-App-Tester").foregroundColor(.white).font(.title).fontWeight(.medium)
-                        }
-                        
+                        Text("iOS-App-Tester").foregroundColor(.white).font(.title).fontWeight(.medium)
                     }
                     
                 }
+                
+            }
         }
     }
     
