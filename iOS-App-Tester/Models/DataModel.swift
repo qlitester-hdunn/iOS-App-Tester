@@ -14,7 +14,7 @@ protocol DBModel: Decodable {
     var europeanCountries: [String] {get set}
 }
 
-struct DataModel: DBModel {
+struct DataModel: DBModel, Decodable {
     var newbooks: [Book]
     var allbooks: [Book]
     var cities: [String]
@@ -41,7 +41,7 @@ struct Book: Decodable, Identifiable {
     var title: String = ""
     var author: String = ""
 }
-struct DataDefault: DBModel {
+struct DataDefault: DBModel, Decodable {
     var newbooks: [Book] = [Book()]
     var allbooks: [Book] = [Book()]
     var cities: [String] = [""]

@@ -31,7 +31,7 @@ struct Spinner: View {
     var body: some View {
         ZStack {
             // Static row which shows user's current selection
-            HStack {
+            VStack {
                 Text(title)
                 Spacer()
                 Text(options[selection])
@@ -58,7 +58,7 @@ struct Spinner: View {
                     Text(title)
                         .font(Font.custom("Avenir Next", size: 16).weight(.semibold))
                         .foregroundColor(.white)
-                    HStack {
+                    VStack {
                         Spacer()
                         ForEach(options.indices, id: \.self) { i in
                             if i == selection {

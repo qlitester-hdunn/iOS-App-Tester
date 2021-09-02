@@ -44,7 +44,7 @@ struct ButtonView: View {
 
         switch destination {
         case .spinner:
-            Spinner()
+            Spinner(title: "Countries")
         case .customList:
             CustomList()
         case .typeText:
