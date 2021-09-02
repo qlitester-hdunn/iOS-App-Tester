@@ -9,7 +9,7 @@ import XCTest
 @testable import iOS_App_Tester
 
 class iOS_App_TesterTests: XCTestCase {
-
+    
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
@@ -29,5 +29,4 @@ class iOS_App_TesterTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
-
 }

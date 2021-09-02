@@ -49,7 +49,7 @@ class TypeText: iOS_App_TesterUITests {
         return XCTWaiter.wait(for: [expect], timeout: timeout).bool()
     }
     
-    func testExample() {
+    func testText() {
         
         let headingText: XCUIElement = self.app.staticTexts["Type Text"].firstMatch
         let textView: XCUIElement = self.app.textViews["Hello, World!"].firstMatch

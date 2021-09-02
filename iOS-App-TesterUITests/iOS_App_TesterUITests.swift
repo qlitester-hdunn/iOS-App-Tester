@@ -8,11 +8,12 @@
 import XCTest
 
 class iOS_App_TesterUITests: XCTestCase {
-   var app: XCUIApplication = XCUIApplication()
+   let app: XCUIApplication = XCUIApplication()
     
-    override func setUp(){
-        self.app.launch()
+    override func setUp() {
         super.setUp()
+            continueAfterFailure = false
+            app.launch()
     }
     
     override func setUpWithError() throws {
@@ -35,5 +36,12 @@ class iOS_App_TesterUITests: XCTestCase {
                 XCUIApplication().launch()
             }
         }
+    }
+    
+    func testExample() throws {
+        let title: XCUIElement = app.staticTexts["iOS-App-Tester"].firstMatch
+        XCTAssert(title.exists)
+        // This is an example of a functional test case.
+        // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
 }
