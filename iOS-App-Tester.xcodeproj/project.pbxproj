@@ -36,6 +36,8 @@
 		30783C44269815C500B43F76 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C43269815C500B43F76 /* Reduce.swift */; };
 		30783C492698167100B43F76 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C482698167100B43F76 /* AppState.swift */; };
 		30783C4E269816CB00B43F76 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C4D269816CB00B43F76 /* Store.swift */; };
+		30783C5C269961EC00B43F76 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C5B269961EC00B43F76 /* Database.swift */; };
+		30783C612699624B00B43F76 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C602699624B00B43F76 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		30783C43269815C500B43F76 /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
 		30783C482698167100B43F76 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		30783C4D269816CB00B43F76 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		30783C5B269961EC00B43F76 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		30783C602699624B00B43F76 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				30092B952675439E00732187 /* CarDataListAdapter.swift */,
+				30783C5B269961EC00B43F76 /* Database.swift */,
 			);
 			path = Adapters;
 			sourceTree = "<group>";
@@ -146,6 +151,7 @@
 			isa = PBXGroup;
 			children = (
 				300C0C9E2665E38A0006E810 /* CarModel.swift */,
+				30783C602699624B00B43F76 /* DataModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -448,6 +454,8 @@
 				300C0C992665DFF60006E810 /* CarsList.swift in Sources */,
 				3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */,
 				30092BA526757A4700732187 /* OptionalWrappers.swift in Sources */,
+				30783C5C269961EC00B43F76 /* Database.swift in Sources */,
+				30783C612699624B00B43F76 /* DataModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

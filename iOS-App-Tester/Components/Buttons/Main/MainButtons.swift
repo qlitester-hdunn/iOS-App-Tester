@@ -24,12 +24,8 @@ struct MainButtons: View {
                 Group {
                     
                     VStack {
-                       
-//                        MFB.newButton(text: .TypeText, destination: "", action: {print("this")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-                          ButtonFactory.typeText
-                          ButtonFactory.customList
-                          ButtonFactory.spinner
+                        ButtonFactory.typeText
+                        ButtonFactory.customList
                         ButtonFactory.spinner
                         ButtonFactory.spinner
                         ButtonFactory.spinner
@@ -37,14 +33,7 @@ struct MainButtons: View {
                         ButtonFactory.spinner
                         ButtonFactory.spinner
                         ButtonFactory.spinner
-//                          MFB.getButton(text: .Spinner, destiny: .spinner, action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
-//                        MFB.newButton(text: .CustomList, destination: "", action: {print("that")})
+                        ButtonFactory.spinner
                     }
                 }
                 Spacer()
