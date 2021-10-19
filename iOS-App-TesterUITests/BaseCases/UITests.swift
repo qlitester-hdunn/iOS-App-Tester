@@ -7,12 +7,12 @@
 
 import XCTest
 
-class iOS_App_TesterUITests: XCTestCase {
-   var app: XCUIApplication = XCUIApplication()
-    
+class UITests: XCTestCase {
+    var app: XCUIApplication = XCUIApplication()
+
     override func setUp(){
-        self.app.launch()
         super.setUp()
+        self.app.launch()
     }
     
     override func setUpWithError() throws {
