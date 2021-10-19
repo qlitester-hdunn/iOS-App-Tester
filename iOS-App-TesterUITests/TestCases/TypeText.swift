@@ -52,19 +52,29 @@ class TypeText: iOS_App_TesterUITests {
     
     func testExample() {
         
-        let headingText: XCUIElement = self.app.staticTexts["Type Text"].firstMatch
+        let headingText: XCUIElement = self.app.staticTexts["iOS-App-Tester"].firstMatch
         let textView: XCUIElement = self.app.textViews["Hello,World"].firstMatch
         let labelTypeText: XCUIElement = self.app.staticTexts["Type Text"].firstMatch
         let backButton: XCUIElement = self.app.images["arrow.left"].firstMatch
+        
         func navigateToTextType() -> Void {
             
-            let condition: () -> Bool = {
-                return self.app.buttons["Type Text"].firstMatch.exists
-                
-            }
+//            let condition: () -> Bool = {
+//                return self.app.buttons["Type Text"].firstMatch.exists
+//
+//            }
         
 //            wait(for: condition(), description: "Wait for Type Text button", timeout: TypeText.timeout)
             self.app.buttons["Type Text"].firstMatch.tap()
+        }
+        
+        func naviateToCustomListAdapter(){
+            self.app.buttons["Custom List Adapter"].firstMatch.tap()
+        }
+        
+        func naviateToTop(){
+//            self.app.helpTags["Swipe down with three fingers to reveal notifications., Swipe up with three fingers to reveal the control center, Double-tap to scroll to top"].firstMatch.tap()
+            self.app.coordinate(withNormalizedOffset: .zero).tap()
         }
         
         func verifyBackButton(){
@@ -72,8 +82,31 @@ class TypeText: iOS_App_TesterUITests {
             XCTAssert(self.app.buttons["Type Text"].firstMatch.exists)
         }
         
+        func verifyButtonCount(){
+            XCTAssert(self.app.buttons.count == 10)
+            print("Number of Buttons: \(self.app.buttons.count)")
+        }
+        
+        func verifyCanType(){
+            self.app.textViews.firstMatch.tap()
+            XCTAssert(self.app.keyboards.count > 0)
+            
+        }
+        
         func verifyHeadingText(){
-            XCTAssert(headingText.label == "Type Text")
+            XCTAssert(headingText.label == "iOS-App-Tester")
+        }
+        
+        func verifyCanScrollDown(){
+            let tableView = app.descendants(matching: .table).firstMatch
+            guard let lastCell = tableView.cells.allElementsBoundByIndex.last else {return}
+            var count = 0
+            
+            while (lastCell.isHittable == false){
+                app.swipeUp()
+                count += 1
+            }
+            XCTAssert(count > 0)
         }
         
         func verifyTextViewLabel(){
@@ -83,30 +116,7 @@ class TypeText: iOS_App_TesterUITests {
         func verifyTextView(){
             XCTAssert(textView.exists)
         }
-//        func waitFor(for identifiers: [String]){
-//            identifiers.forEach({
-//                (id) in
-//                print("\(id)")
-//                wait(for:  self.app.staticTexts[id].firstMatch.exists, timeout: TypeText.timeout)
-//            })
-//        }
         
-        func waitForDisplay(for identifiers: [String], type: XCUIElement.ElementType? = nil) -> Void {
-            identifiers.forEach({
-                (id) in type ?? 
-                print(String(describing: "\(id)"))
-                    switch (type) {
-                    case XCUIElement.ElementType.staticText:
-                        XCTAssert(self.app.staticTexts[id].firstMatch.waitForExistence(timeout: TypeText.timeout))
-                    case XCUIElement.ElementType.textField:
-                        XCTAssert(self.app.textFields[id].firstMatch.waitForExistence(timeout: TypeText.timeout))
-                    default:
-                        print(String(describing: "Element '\(id)' does not exist"))
-                    }
-            })
-            
-            print("HELLO WORLD")
-        }
         
 //        func waitForDisplay(for identifiers: [String], type: XCUIElement.ElementType? = nil) -> Void {
 //            identifiers.forEach({
@@ -124,11 +134,16 @@ class TypeText: iOS_App_TesterUITests {
 //        }
         
         navigateToTextType()
-        waitForDisplay(for: identifierStrings, type)
+        verifyButtonCount()
+//        waitForDisplay(for: identifierStrings, type)
         verifyHeadingText()
         verifyTextViewLabel()
         verifyTextView()
+        verifyCanType()
         verifyBackButton()
+        naviateToCustomListAdapter()
+        verifyCanScrollDown()
+        naviateToTop()
     
     }
 }
