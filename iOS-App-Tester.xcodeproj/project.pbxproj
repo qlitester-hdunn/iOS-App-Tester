@@ -20,7 +20,7 @@
 		3023CD3B2650F1B500DD0336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3023CD3A2650F1B500DD0336 /* Preview Assets.xcassets */; };
 		3023CD3E2650F1B500DD0336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3023CD3C2650F1B500DD0336 /* LaunchScreen.storyboard */; };
 		3023CD492650F1B500DD0336 /* iOS_App_TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD482650F1B500DD0336 /* iOS_App_TesterTests.swift */; };
-		3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */; };
+		3023CD542650F1B500DD0336 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD532650F1B500DD0336 /* UITests.swift */; };
 		3023CD692650F9B000DD0336 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD682650F9AF00DD0336 /* Main.swift */; };
 		3023CD7426518CBC00DD0336 /* MainButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD7326518CBC00DD0336 /* MainButtons.swift */; };
 		3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD7B265239FB00DD0336 /* MainButtonName.swift */; };
@@ -36,6 +36,8 @@
 		30783C44269815C500B43F76 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C43269815C500B43F76 /* Reduce.swift */; };
 		30783C492698167100B43F76 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C482698167100B43F76 /* AppState.swift */; };
 		30783C4E269816CB00B43F76 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C4D269816CB00B43F76 /* Store.swift */; };
+		ACA7D931271F536D00B678A1 /* TypeTextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7D930271F536D00B678A1 /* TypeTextCase.swift */; };
+		ACA7D94C271F7CB200B678A1 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA7D94B271F7CB200B678A1 /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,7 +76,7 @@
 		3023CD482650F1B500DD0336 /* iOS_App_TesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_TesterTests.swift; sourceTree = "<group>"; };
 		3023CD4A2650F1B500DD0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3023CD4F2650F1B500DD0336 /* iOS-App-TesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-App-TesterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_TesterUITests.swift; sourceTree = "<group>"; };
+		3023CD532650F1B500DD0336 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		3023CD552650F1B500DD0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3023CD682650F9AF00DD0336 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		3023CD7326518CBC00DD0336 /* MainButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtons.swift; sourceTree = "<group>"; };
@@ -91,6 +93,8 @@
 		30783C43269815C500B43F76 /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
 		30783C482698167100B43F76 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		30783C4D269816CB00B43F76 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		ACA7D930271F536D00B678A1 /* TypeTextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTextCase.swift; sourceTree = "<group>"; };
+		ACA7D94B271F7CB200B678A1 /* Strings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,8 +216,9 @@
 		3023CD522650F1B500DD0336 /* iOS-App-TesterUITests */ = {
 			isa = PBXGroup;
 			children = (
+				ACA7D94A271F7C8900B678A1 /* Constants */,
+				ACA7D92F271F531C00B678A1 /* BaseCases */,
 				300C0C7E2664C9A40006E810 /* TestCases */,
-				3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */,
 				3023CD552650F1B500DD0336 /* Info.plist */,
 			);
 			path = "iOS-App-TesterUITests";
@@ -293,6 +298,23 @@
 				30783C4D269816CB00B43F76 /* Store.swift */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		ACA7D92F271F531C00B678A1 /* BaseCases */ = {
+			isa = PBXGroup;
+			children = (
+				3023CD532650F1B500DD0336 /* UITests.swift */,
+				ACA7D930271F536D00B678A1 /* TypeTextCase.swift */,
+			);
+			path = BaseCases;
+			sourceTree = "<group>";
+		};
+		ACA7D94A271F7C8900B678A1 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ACA7D94B271F7CB200B678A1 /* Strings.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -464,7 +486,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				300C0C802664C9DA0006E810 /* TypeText.swift in Sources */,
-				3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */,
+				3023CD542650F1B500DD0336 /* UITests.swift in Sources */,
+				ACA7D94C271F7CB200B678A1 /* Strings.swift in Sources */,
+				ACA7D931271F536D00B678A1 /* TypeTextCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
