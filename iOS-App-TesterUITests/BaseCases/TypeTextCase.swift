@@ -28,6 +28,7 @@ class TypeTextCase: UITests{
         nonBackButton = self.app.images[Strings.arrowright].firstMatch
         labelTypeText = self.app.staticTexts[Strings.TypeText].firstMatch
     }
+    
     func navigateToTextType() -> Void {
         buttonTypeText.tap()
     }
