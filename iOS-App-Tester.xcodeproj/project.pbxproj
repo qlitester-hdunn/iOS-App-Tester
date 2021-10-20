@@ -20,17 +20,19 @@
 		3023CD3B2650F1B500DD0336 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3023CD3A2650F1B500DD0336 /* Preview Assets.xcassets */; };
 		3023CD3E2650F1B500DD0336 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3023CD3C2650F1B500DD0336 /* LaunchScreen.storyboard */; };
 		3023CD492650F1B500DD0336 /* iOS_App_TesterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD482650F1B500DD0336 /* iOS_App_TesterTests.swift */; };
-		3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */; };
+		3023CD542650F1B500DD0336 /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD532650F1B500DD0336 /* UITests.swift */; };
 		3023CD692650F9B000DD0336 /* Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD682650F9AF00DD0336 /* Main.swift */; };
 		3023CD7426518CBC00DD0336 /* MainButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD7326518CBC00DD0336 /* MainButtons.swift */; };
 		3023CD7C265239FB00DD0336 /* MainButtonName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD7B265239FB00DD0336 /* MainButtonName.swift */; };
 		3023CD812652422100DD0336 /* MainButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD802652422100DD0336 /* MainButtonFactory.swift */; };
 		3023CD8C2652562800DD0336 /* TypeText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3023CD8B2652562800DD0336 /* TypeText.swift */; };
+		3050C015271F65310021756B /* TypeTextCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3050C014271F65310021756B /* TypeTextCase.swift */; };
 		305D26D4265A04DA009584B9 /* TypeTextBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26D3265A04DA009584B9 /* TypeTextBtn.swift */; };
 		305D26DF265A2B11009584B9 /* CustomListBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26DE265A2B11009584B9 /* CustomListBtn.swift */; };
 		305D26E7265A2B4B009584B9 /* CustomList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26E6265A2B4B009584B9 /* CustomList.swift */; };
 		305D26EC265B3A22009584B9 /* Spinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26EB265B3A22009584B9 /* Spinner.swift */; };
 		305D26F1265B3A52009584B9 /* ButtonFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 305D26F0265B3A52009584B9 /* ButtonFactory.swift */; };
+		30764C3D26E93C4400BD9069 /* CountrySpinnerText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30764C3C26E93C4300BD9069 /* CountrySpinnerText.swift */; };
 		30783C392697AA2400B43F76 /* DataBase.json in Resources */ = {isa = PBXBuildFile; fileRef = 30783C382697AA2400B43F76 /* DataBase.json */; };
 		30783C3F2698157700B43F76 /* Action.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C3E2698157700B43F76 /* Action.swift */; };
 		30783C44269815C500B43F76 /* Reduce.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C43269815C500B43F76 /* Reduce.swift */; };
@@ -76,18 +78,20 @@
 		3023CD482650F1B500DD0336 /* iOS_App_TesterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_TesterTests.swift; sourceTree = "<group>"; };
 		3023CD4A2650F1B500DD0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3023CD4F2650F1B500DD0336 /* iOS-App-TesterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "iOS-App-TesterUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_App_TesterUITests.swift; sourceTree = "<group>"; };
+		3023CD532650F1B500DD0336 /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		3023CD552650F1B500DD0336 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3023CD682650F9AF00DD0336 /* Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main.swift; sourceTree = "<group>"; };
 		3023CD7326518CBC00DD0336 /* MainButtons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtons.swift; sourceTree = "<group>"; };
 		3023CD7B265239FB00DD0336 /* MainButtonName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonName.swift; sourceTree = "<group>"; };
 		3023CD802652422100DD0336 /* MainButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainButtonFactory.swift; sourceTree = "<group>"; };
 		3023CD8B2652562800DD0336 /* TypeText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeText.swift; sourceTree = "<group>"; };
+		3050C014271F65310021756B /* TypeTextCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTextCase.swift; sourceTree = "<group>"; };
 		305D26D3265A04DA009584B9 /* TypeTextBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TypeTextBtn.swift; sourceTree = "<group>"; };
 		305D26DE265A2B11009584B9 /* CustomListBtn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomListBtn.swift; sourceTree = "<group>"; };
 		305D26E6265A2B4B009584B9 /* CustomList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomList.swift; sourceTree = "<group>"; };
 		305D26EB265B3A22009584B9 /* Spinner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Spinner.swift; sourceTree = "<group>"; };
 		305D26F0265B3A52009584B9 /* ButtonFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonFactory.swift; sourceTree = "<group>"; };
+		30764C3C26E93C4300BD9069 /* CountrySpinnerText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountrySpinnerText.swift; sourceTree = "<group>"; };
 		30783C382697AA2400B43F76 /* DataBase.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DataBase.json; sourceTree = "<group>"; };
 		30783C3E2698157700B43F76 /* Action.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Action.swift; sourceTree = "<group>"; };
 		30783C43269815C500B43F76 /* Reduce.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reduce.swift; sourceTree = "<group>"; };
@@ -218,9 +222,10 @@
 		3023CD522650F1B500DD0336 /* iOS-App-TesterUITests */ = {
 			isa = PBXGroup;
 			children = (
+				3050C013271F64FE0021756B /* BaseCase */,
 				300C0C7E2664C9A40006E810 /* TestCases */,
-				3023CD532650F1B500DD0336 /* iOS_App_TesterUITests.swift */,
 				3023CD552650F1B500DD0336 /* Info.plist */,
+				30764C3C26E93C4300BD9069 /* CountrySpinnerText.swift */,
 			);
 			path = "iOS-App-TesterUITests";
 			sourceTree = "<group>";
@@ -261,6 +266,15 @@
 				305D26CE265A0419009584B9 /* Main */,
 			);
 			path = Buttons;
+			sourceTree = "<group>";
+		};
+		3050C013271F64FE0021756B /* BaseCase */ = {
+			isa = PBXGroup;
+			children = (
+				3023CD532650F1B500DD0336 /* UITests.swift */,
+				3050C014271F65310021756B /* TypeTextCase.swift */,
+			);
+			path = BaseCase;
 			sourceTree = "<group>";
 		};
 		305D26CE265A0419009584B9 /* Main */ = {
@@ -471,8 +485,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3050C015271F65310021756B /* TypeTextCase.swift in Sources */,
 				300C0C802664C9DA0006E810 /* TypeText.swift in Sources */,
-				3023CD542650F1B500DD0336 /* iOS_App_TesterUITests.swift in Sources */,
+				30764C3D26E93C4400BD9069 /* CountrySpinnerText.swift in Sources */,
+				3023CD542650F1B500DD0336 /* UITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
