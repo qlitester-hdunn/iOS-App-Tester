@@ -41,10 +41,6 @@ class TypeTextCase: UITests{
         textView.tap()
     }
     
-    func naviateToTop(){
-        self.app.coordinate(withNormalizedOffset: .zero).tap()
-    }
-    
     func tapBackButton(){
         backButton.tap()
     }
