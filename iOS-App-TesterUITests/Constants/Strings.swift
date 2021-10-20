@@ -8,9 +8,10 @@
 import Foundation
 
 struct Strings {
-    let iOSAppTester = "iOS-App-Tester"
-    let HelloWorld = "Hello,World"
-    let TypeText = "Type Text"
-    let arrowleft = "arrow.left"
-    let arrowright = "arrow.right"
+    static let iOSAppTester = "iOS-App-Tester"
+    static let HelloWorld = "Hello,World"
+    static let TypeText = "Type Text"
+    static let arrowleft = "arrow.left"
+    static let arrowright = "arrow.right"
+    static let CustomListAdapter = "Custom List Adapter"
 }

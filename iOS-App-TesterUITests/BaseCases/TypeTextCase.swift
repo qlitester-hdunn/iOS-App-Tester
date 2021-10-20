@@ -17,23 +17,23 @@ class TypeTextCase: UITests{
     var labelTypeText: XCUIElement!
     
     var typeTextTimeout: TimeInterval = 1.0
-    let identifierStrings = ["Hello,World"]
+    let identifierStrings = [Strings.HelloWorld]
     
     override func setUp() {
         super.setUp()
-        headingText = self.app.staticTexts[Strings().iOSAppTester].firstMatch
-        textView = self.app.textViews[Strings().HelloWorld].firstMatch
-        buttonTypeText = self.app.buttons[Strings().TypeText].firstMatch
-        backButton = self.app.images[Strings().arrowleft].firstMatch
-        nonBackButton = self.app.images[Strings().arrowright].firstMatch
-        labelTypeText = self.app.staticTexts[Strings().TypeText].firstMatch
+        headingText = self.app.staticTexts[Strings.iOSAppTester].firstMatch
+        textView = self.app.textViews[Strings.HelloWorld].firstMatch
+        buttonTypeText = self.app.buttons[Strings.TypeText].firstMatch
+        backButton = self.app.images[Strings.arrowleft].firstMatch
+        nonBackButton = self.app.images[Strings.arrowright].firstMatch
+        labelTypeText = self.app.staticTexts[Strings.TypeText].firstMatch
     }
     func navigateToTextType() -> Void {
         buttonTypeText.tap()
     }
     
     func naviateToCustomListAdapter(){
-        self.app.buttons["Custom List Adapter"].firstMatch.tap()
+        self.app.buttons[Strings.CustomListAdapter].firstMatch.tap()
     }
     
     func navigateToTextViews(){
@@ -61,7 +61,7 @@ class TypeTextCase: UITests{
     }
     
     func verifyHeadingText(){
-        XCTAssert(headingText.label == "iOS-App-Tester")
+        XCTAssert(headingText.label == Strings.iOSAppTester)
     }
     
     func verifyCanScrollDown(){
@@ -77,7 +77,7 @@ class TypeTextCase: UITests{
     }
     
     func verifyTextViewLabel(){
-        XCTAssert(labelTypeText.label == "Type Text")
+        XCTAssert(labelTypeText.label == Strings.TypeText)
     }
     
     func verifyTextViewExists(){
