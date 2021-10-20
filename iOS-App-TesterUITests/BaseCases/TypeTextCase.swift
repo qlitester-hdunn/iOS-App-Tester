@@ -36,6 +36,10 @@ class TypeTextCase: UITests{
         self.app.buttons["Custom List Adapter"].firstMatch.tap()
     }
     
+    func navigateToTextViews(){
+        textView.tap()
+    }
+    
     func naviateToTop(){
         self.app.coordinate(withNormalizedOffset: .zero).tap()
     }
@@ -49,12 +53,10 @@ class TypeTextCase: UITests{
     }
     
     func verifyButtonCount(){
-        print("Number of Buttons: \(self.app.buttons.count)")
         XCTAssert(self.app.buttons.count == 10)
     }
     
     func verifyKeyboardAppears(){
-        self.app.textViews.firstMatch.tap()
         XCTAssert(self.app.keyboards.count > 0)
     }
     

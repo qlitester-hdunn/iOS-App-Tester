@@ -15,6 +15,7 @@ class TypeText: TypeTextCase {
         verifyHeadingText()
         verifyTextViewLabel()
         verifyTextViewExists()
+        navigateToTextViews()
         verifyKeyboardAppears()
         verifyBackButton()
         tapBackButton()
