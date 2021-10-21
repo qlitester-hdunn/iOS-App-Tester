@@ -8,11 +8,18 @@
 import XCTest
 
 class TypeText: TypeTextCase {
-    
-    func testText() {
+
+    func testExample() {
+        verifyButtonCount()
         navigateToTextType()
-        waitForDisplay(for: self.idetifierStrings, type: XCUIElement.ElementType.textView)
+        verifyHeadingText()
         verifyTextViewLabel()
-        verifyTextView()
+        verifyTextViewExists()
+        navigateToTextViews()
+        verifyKeyboardAppears()
+        verifyBackButton()
+        tapBackButton()
+        naviateToCustomListAdapter()
+        verifyCanScrollDown()
     }
 }
