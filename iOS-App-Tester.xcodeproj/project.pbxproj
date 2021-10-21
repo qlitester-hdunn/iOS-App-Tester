@@ -40,6 +40,7 @@
 		30783C4E269816CB00B43F76 /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C4D269816CB00B43F76 /* Store.swift */; };
 		30783C5C269961EC00B43F76 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C5B269961EC00B43F76 /* Database.swift */; };
 		30783C612699624B00B43F76 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30783C602699624B00B43F76 /* DataModel.swift */; };
+		ACAB75FE2720F5DE00B3093C /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAB75FD2720F5DE00B3093C /* Strings.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		30783C4D269816CB00B43F76 /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		30783C5B269961EC00B43F76 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		30783C602699624B00B43F76 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		ACAB75FD2720F5DE00B3093C /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +224,7 @@
 		3023CD522650F1B500DD0336 /* iOS-App-TesterUITests */ = {
 			isa = PBXGroup;
 			children = (
+				ACAB75FC2720F5DE00B3093C /* Constants */,
 				3050C013271F64FE0021756B /* BaseCase */,
 				300C0C7E2664C9A40006E810 /* TestCases */,
 				3023CD552650F1B500DD0336 /* Info.plist */,
@@ -313,6 +316,14 @@
 				30783C4D269816CB00B43F76 /* Store.swift */,
 			);
 			path = Redux;
+			sourceTree = "<group>";
+		};
+		ACAB75FC2720F5DE00B3093C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				ACAB75FD2720F5DE00B3093C /* Strings.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -487,6 +498,7 @@
 			files = (
 				3050C015271F65310021756B /* TypeTextCase.swift in Sources */,
 				300C0C802664C9DA0006E810 /* TypeText.swift in Sources */,
+				ACAB75FE2720F5DE00B3093C /* Strings.swift in Sources */,
 				30764C3D26E93C4400BD9069 /* CountrySpinnerText.swift in Sources */,
 				3023CD542650F1B500DD0336 /* UITests.swift in Sources */,
 			);

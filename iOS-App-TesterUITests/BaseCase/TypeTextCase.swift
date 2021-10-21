@@ -1,60 +1,84 @@
 //
-//  TypeText.swift
+//  TypeTextCase.swift
 //  iOS-App-TesterUITests
 //
-//  Created by Tester on 10/19/21.
+//  Created by Dorian Bizgan on 10/19/21.
 //
 
-import Foundation
 import XCTest
 
-class TypeTextCase: UITests {
+class TypeTextCase: UITests{
     
-    let idetifierStrings = ["Hello World!"]
     var headingText: XCUIElement!
     var textView: XCUIElement!
+    var buttonTypeText: XCUIElement!
+    var backButton: XCUIElement!
+    var nonBackButton: XCUIElement!
     var labelTypeText: XCUIElement!
+    
+    var typeTextTimeout: TimeInterval = 1.0
+    let identifierStrings = [Strings.HelloWorld]
     
     override func setUp() {
         super.setUp()
-        headingText = app.staticTexts["Type Text"].firstMatch
-        textView = self.app.textViews["Hello,World"].firstMatch
-        labelTypeText = self.app.staticTexts["Type Text"].firstMatch
+        headingText = self.app.staticTexts[Strings.iOSAppTester].firstMatch
+        textView = self.app.textViews[Strings.HelloWorld].firstMatch
+        buttonTypeText = self.app.buttons[Strings.TypeText].firstMatch
+        backButton = self.app.images[Strings.arrowleft].firstMatch
+        nonBackButton = self.app.images[Strings.arrowright].firstMatch
+        labelTypeText = self.app.staticTexts[Strings.TypeText].firstMatch
     }
     
-    static var timeout: TimeInterval = 1.0
-    
     func navigateToTextType() -> Void {
+        buttonTypeText.tap()
+    }
+    
+    func naviateToCustomListAdapter(){
+        self.app.buttons[Strings.CustomListAdapter].firstMatch.tap()
+    }
+    
+    func navigateToTextViews(){
+        textView.tap()
+    }
+    
+    func tapBackButton(){
+        backButton.tap()
+    }
+    
+    func verifyBackButton(){
+        XCTAssert(self.backButton.exists)
+    }
+    
+    func verifyButtonCount(){
+        XCTAssert(self.app.buttons.count == 10)
+    }
+    
+    func verifyKeyboardAppears(){
+        XCTAssert(self.app.keyboards.count > 0)
+    }
+    
+    func verifyHeadingText(){
+        XCTAssert(headingText.label == Strings.iOSAppTester)
+    }
+    
+    func verifyCanScrollDown(){
+        let tableView = app.descendants(matching: .table).firstMatch
+        guard let lastCell = tableView.cells.allElementsBoundByIndex.last else {return}
+        var count = 0
         
-        let condition: () -> Bool = {
-            self.app.buttons["Type Text"].firstMatch.exists
+        while (lastCell.isHittable == false){
+            app.swipeUp()
+            count += 1
         }
-        
-        wait(for: { self.app.buttons["Type Text"].firstMatch.exists } , description: "Wait for Type Text button", timeout: TypeTextCase.timeout)
-        self.app.buttons["Type Text"].firstMatch.tap()
+        XCTAssert(count > 0)
     }
     
     func verifyTextViewLabel(){
-        XCTAssert(labelTypeText.label == "Type Text")
-        
+        XCTAssert(labelTypeText.label == Strings.TypeText)
     }
-    func verifyTextView(){
+    
+    func verifyTextViewExists(){
         XCTAssert(textView.exists)
     }
     
-    func waitForDisplay(for identifiers: [String], type: XCUIElement.ElementType? = nil) -> Void {
-        identifiers.forEach({
-            (id) in
-            print("type \(type)")
-            let type = type ?? XCUIElement.ElementType.staticText
-            switch (type) {
-            case XCUIElement.ElementType.staticText:
-                wait(for: { self.app.staticTexts[id].firstMatch.exists } )
-            case XCUIElement.ElementType.textField:
-                wait(for: { self.app.textFields[id].firstMatch.exists } )
-            default:
-                print(String(describing: "Element '\(id)' does not exist"))
-            }
-        })
-    }
 }
