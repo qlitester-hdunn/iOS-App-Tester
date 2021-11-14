@@ -24,6 +24,7 @@ struct TypeText: View {
                         get: { store.state.editText },
                         set: { store.dispatch(action: .setTextEdit($0))})
             )
+            .accessibility(identifier: "typeTextField")
             .padding(4)
             .frame(maxWidth: 200, maxHeight:100, alignment: /*@START_MENU_TOKEN@*/.center/*@END_MENU_TOKEN@*/)
             .background(Color(UIColor(red: 0.95, green: 0.95, blue: 1.0, alpha: 1.0)))
